@@ -20,7 +20,7 @@ class LinkedList {
         }
 
         this.length++;
-            return node;
+            return this;
     }
 
     head() {
@@ -49,6 +49,7 @@ class LinkedList {
                 necessaryNode = necessaryNode.next;
             }
         }
+        return this;
     }
 
     insertAt(index, data) {
@@ -61,7 +62,7 @@ class LinkedList {
                 necessaryPlace = necessaryPlace.next;
             }
         }
-        return -1;
+        return this;
     }
 
     isEmpty() {
@@ -76,6 +77,7 @@ class LinkedList {
         this.length = 0;
         this._head = null;
         this._tail = null;
+        return this;
     }
 
     deleteAt(index) {
@@ -100,6 +102,7 @@ class LinkedList {
 
             
         }
+        return this;
     }
 
     reverse() {
@@ -117,7 +120,8 @@ class LinkedList {
             for (var n = 0; n < datacash.length; n++){
                 this.append(datacash[n]);
                 }
-
+                return this;
+                    
     }
 
     indexOf(data) {
@@ -135,4 +139,5 @@ class LinkedList {
 }
 
 module.exports = LinkedList;
+
 
