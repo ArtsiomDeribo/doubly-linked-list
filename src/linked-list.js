@@ -59,6 +59,7 @@ class LinkedList {
             if (q == index){
                 necessaryPlace.prev = necessaryPlace;
                 necessaryPlace.data = data;
+                this.length++;
             } else {
                 necessaryPlace.prev = necessaryPlace;
                 necessaryPlace = necessaryPlace.next;
