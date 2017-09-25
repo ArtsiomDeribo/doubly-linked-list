@@ -57,15 +57,16 @@ class LinkedList {
         
         for (var q = 0; q < this.length; q++){
             if (q == index){
-                this.necessaryPlace.prev = necessaryPlace;
+                necessaryPlace.prev = necessaryPlace;
                 necessaryPlace.data = data;
             } else {
-                this.necessaryPlace.prev = necessaryPlace;
+                necessaryPlace.prev = necessaryPlace;
                 necessaryPlace = necessaryPlace.next;
             }
         }
         return this;
     }
+    
     isEmpty() {
         if (this.length == 0){
             return true;
